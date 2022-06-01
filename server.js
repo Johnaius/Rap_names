@@ -33,10 +33,10 @@ app.get('/api/:rapperName', (req, res)=>{
     if(rappers[rappersName]){
         res.json(rappers[rappersName])
     }else{
-        res.json(rappers)['dylan']
+        res.json(rappers['dylan'])
     }
 })
 
-app.listen(process.env.PORT || loginPORT, ()=>{
+app.listen(process.env.PORT || PORT, ()=>{
     console.log(`The Server is running on port ${PORT}. You better go catch it!`)
 })
